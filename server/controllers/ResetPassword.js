@@ -25,7 +25,7 @@ exports.resetPasswordToken = async (req, res) => {
 		);
 		console.log("DETAILS", updatedDetails);
 
-		const url = `https://aryandag.github.io/Mentor-Match/update-password/${token}`;
+		const url = `https://aryandag.github.io/Mentor-Match/#/update-password/${token}`;
 
 		await mailSender(
 			email,
