@@ -33,18 +33,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devgupta0513/MentorMatch-minor-2.git"
+    "url": "git+https://github.com/AryanDAG/Mentor-Match.git"
   },
   "author": "Aryan Gupta",
   "bugs": {
-    "url": "https://github.com/devgupta0513/MentorMatch-minor-2/issues"
+    "url": "https://github.com/AryanDAG/Mentor-Match/issues"
   },
+  "homepage": " https://AryanDAG.github.io/Mentor-Match",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "server": "cd server && npm run dev",
-    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
+    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
